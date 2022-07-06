@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/HibernateMappingDTD5.3//EN"
+	"http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="proyectoDogSchool.Deportes" table="deportes"
+		catalog="proyecto_dog_school">
+		<id name="id" type="java.lang.Integer">
+			<column name="id" unique="true" />
+			<generator class="increment" />
+		</id>
+		<property name="deporte"></property>
+		<property name="orden"></property>
+	</class>
+</hibernate-mapping>

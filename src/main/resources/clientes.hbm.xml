@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/HibernateMappingDTD5.3//EN"
+	"http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="proyectoDogSchool.Clientes" table="clientes"
+		catalog="proyecto_dog_school">
+		<id name="dni">
+			<column name="dni" />
+		</id>
+		<property name="nombre"></property>
+		<property name="apellido1"></property>
+		<property name="apellido2"></property>
+		<property name="correo"></property>
+		<property name="telefono" type="integer"></property>
+		<property name="perro"></property>
+		<property name="raza_perro"></property>
+		<property name="deporte"></property>
+	</class>
+</hibernate-mapping>
